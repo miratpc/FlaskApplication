@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: flask-app-configmap
+data:
+  MONGODB_URI: "mongodb://localhost:27017/"
+

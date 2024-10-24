@@ -1,0 +1,30 @@
+/* static/style.css */
+
+body {
+    background-color: #f8f9fa;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.card {
+    width: 100%;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.btn-group {
+    margin-top: 10px;
+}
+
+/* Optional: Add hover effect to buttons */
+.btn:hover {
+    filter: brightness(90%);
+}
+

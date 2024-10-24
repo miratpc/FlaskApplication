@@ -1,0 +1,22 @@
+<!-- delete.html -->
+
+{% extends "base.html" %}
+
+{% block main %}
+<div class="container">
+    <form action="{{ url_for('delete', book_id=book_id) }}" method="post">
+        {{ form.csrf_token }}
+        <h2 class="mt-4 mb-4">Delete Book</h2>
+        <p>Are you sure you want to delete the following book?</p>
+        <div class="form-row">
+            <div class="col-md-6">
+                <h3>{{ title }}</h3>
+            </div>
+            <div class="col-md-6">
+                {{ form.submit(class="btn btn-danger") }}
+                <a href="{{ url_for('index') }}" class="btn btn-primary">Cancel</a>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}

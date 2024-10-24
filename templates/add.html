@@ -1,0 +1,28 @@
+<!-- add.html -->
+
+{% extends "base.html" %}
+
+{% block main %}
+<div class="container">
+    <form action="{{ url_for('add') }}" method="post">
+        {{ form.csrf_token }}
+        <h2 class="mt-4 mb-4">Add Book</h2>
+        <div class="form-row">
+            <div class="col-md-6">
+                {{ form.isbn(class="form-control", placeholder="Enter ISBN") }}
+                {{ form.title(class="form-control", placeholder="Enter book title") }}
+                {{ form.year(class="form-control", placeholder="Enter publication year") }}
+                {{ form.price(class="form-control", placeholder="Enter price") }}
+                {{ form.page(class="form-control", placeholder="Enter number of pages") }}
+                {{ form.category(class="form-control", placeholder="Enter category") }}
+                {{ form.coverPhoto(class="form-control", placeholder="Enter cover photo URL") }}
+                {{ form.publisher(class="form-control", placeholder="Enter publisher") }}
+                {{ form.author(class="form-control", placeholder="Enter author") }}
+            </div>
+            <div class="col-md-6">
+                {{ form.submit(class="btn btn-primary mt-4") }}
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}
