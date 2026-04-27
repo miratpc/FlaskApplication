@@ -6,7 +6,7 @@ This project demonstrates the development, deployment, and containerization of a
 ## Task 1: MongoDB Deployment
 
 ### MongoDB StatefulSet
-We deployed MongoDB using Kubernetes StatefulSet to ensure stateful operation and data persistence.
+I deployed MongoDB using Kubernetes StatefulSet to ensure stateful operation and data persistence.
 - **Replicas**: 1 MongoDB pod
 - **ServiceName**: `mongodb`
 - **VolumeClaimTemplates**: Storage provision of 1GB
